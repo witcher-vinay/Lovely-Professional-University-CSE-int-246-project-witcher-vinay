@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      html, body {
+      display: flex;
+      justify-content: center;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 15px;
+      }
+      form {
+      border: 5px solid #f1f1f1;
+      margin-top: 100px;
+      margin-right: 300px;
+      margin-left: 300px;
+      }
+      input[type=text], input[type=password] {
+      width: 100%;
+      padding: 16px 8px;
+      margin: 20px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      }
+      button {
+      background-color: #8ebf42;
+      color: white;
+      padding: 14px 0;
+      margin: 10px 0;
+      border: none;
+      cursor: grabbing;
+      width: 100%;
+      }
+      h1 {
+      text-align:center;
+      fone-size:18;
+      }
+      button:hover {
+      opacity: 0.8;
+      }
+      .formcontainer {
+      text-align: left;
+      margin: 24px 50px 12px;
+      }
+      .container {
+      padding: 16px 0;
+      text-align:left;
+      }
+      span.psw {
+      float: right;
+      padding-top: 0;
+      padding-right: 15px;
+      }
+      @media screen and (max-width: 300px) {
+      span.psw {
+      display: block;
+      float: none;
+      }
+    </style>
+  </head>
+<body style="background-color: #4158D0; background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);">
+  <form action="{% url 'result' %}">
+    
+      <h1>ENTER VALUES TO KNOW THE STABILITY OF GRID</h1>
+      <div class="formcontainer">
+      <hr/>
+      <div class="container">
+        <strong>TAU1</strong></label>
+        <input type="text" placeholder="Enter TAU1" name="TAU1" required>
+        <strong>TAU2</strong></label>
+        <input type="text" placeholder="Enter TAU2" name="TAU2" required>
+        <strong>TAU3</strong></label>
+        <input type="text" placeholder="Enter TAU3" name="TAU3" required>
+        <strong>TAU4</strong></label>
+        <input type="text" placeholder="Enter TAU4" name="TAU4" required>
+  <strong>P1</strong></label>
+        <input type="text" placeholder="Enter P1" name="P1" required>
+<strong>P2</strong></label>
+        <input type="text" placeholder="Enter P2" name="P2" required>
+<strong>P3</strong></label>
+        <input type="text" placeholder="Enter P3" name="P3" required>
+<strong>P4</strong></label>
+        <input type="text" placeholder="Enter P4" name="P4" required>
+<strong>G1</strong></label>
+        <input type="text" placeholder="Enter G1" name="G1" required><strong>G2</strong></label>
+        <input type="text" placeholder="Enter G2" name="G2" required><strong>G3</strong></label>
+        <input type="text" placeholder="Enter G3" name="G3" required><strong>G4</strong></label>
+        <input type="text" placeholder="Enter G4" name="G4" required>
+        
+        
+      </div>
+      <button type="submit" value="submit">SUBMIT</button>   
+    </form>
+    
+
+</body>
+</html>
